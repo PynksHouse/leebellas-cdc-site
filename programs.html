@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Programs | Lee-Bella's CDC</title>
-
-<style>
-body{
-font-family:Arial;
-text-align:center;
-background:#f6f3ea;
-}
-
-.logo{
-width:300px;
-margin-top:40px;
-}
-
-.section{
-max-width:800px;
-margin:auto;
-padding:40px;
-}
-
-button{
-background:#7fa685;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:6px;
-cursor:pointer;
-}
-
-</style>
-
+  <title>Programs | Lee-Bella's CDC</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f3ea;color:#4d6470;text-align:center}
+    header,footer{background:#fff;padding:25px}
+    .logo{width:220px;max-width:90%}
+    .content{max-width:900px;margin:auto;padding:50px 20px}
+    .program{
+      background:#fff;max-width:700px;margin:15px auto;padding:20px;border-radius:12px;
+      box-shadow:0 2px 10px rgba(0,0,0,.08)
+    }
+    nav a{
+      display:inline-block;margin:6px;padding:10px 18px;text-decoration:none;
+      background:#89a98f;color:#fff;border-radius:8px;font-weight:bold
+    }
+    footer{background:#5f7f8c;color:#fff;margin-top:40px}
+  </style>
 </head>
-
 <body>
 
-<img src="logo.png" class="logo">
+<header>
+  <img src="logo.png" class="logo" alt="Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="waitlist.html">Waitlist</a>
+    <a href="enrollment.html">Enrollment</a>
+  </nav>
+</header>
 
-<div class="section">
+<div class="content">
+  <h1>Programs & Services</h1>
 
-<h1>Our Programs</h1>
-
-<p>Full-time childcare</p>
-<p>Part-time childcare</p>
-<p>Overnight care for working parents</p>
-<p>Before and after school care</p>
-<p>Transportation services</p>
-
-<br>
-
-<button onclick="location.href='index.html'">Back Home</button>
-
+  <div class="program"><h3>Full-Time Childcare</h3><p>Consistent day and night support for working families.</p></div>
+  <div class="program"><h3>Part-Time Care</h3><p>Flexible care options for changing schedules.</p></div>
+  <div class="program"><h3>Overnight Care</h3><p>Nurturing overnight care for parents working late or overnight shifts.</p></div>
+  <div class="program"><h3>Before & After School Care</h3><p>Support for school-age children before and after the school day.</p></div>
+  <div class="program"><h3>Transportation Options</h3><p>Transportation support for families without reliable transportation.</p></div>
 </div>
+
+<footer>Lee-Bella's No Place Like Home CDC</footer>
 
 </body>
 </html>

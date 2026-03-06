@@ -1,78 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Join Waitlist | Lee-Bella's CDC</title>
-
-<style>
-
-body{
-font-family:Arial;
-text-align:center;
-background:#f6f3ea;
-}
-
-.logo{
-width:300px;
-margin-top:40px;
-}
-
-.section{
-max-width:600px;
-margin:auto;
-padding:40px;
-}
-
-input{
-width:100%;
-padding:12px;
-margin:10px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
-background:#7fa685;
-color:white;
-border:none;
-padding:14px 24px;
-border-radius:6px;
-cursor:pointer;
-}
-
-</style>
-
+  <title>Waitlist | Lee-Bella's CDC</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f3ea;color:#4d6470;text-align:center}
+    header,footer{background:#fff;padding:25px}
+    .logo{width:220px;max-width:90%}
+    .content{max-width:700px;margin:auto;padding:50px 20px}
+    form{
+      background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08)
+    }
+    input,select,textarea{
+      width:90%;max-width:500px;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:8px
+    }
+    button{
+      background:#89a98f;color:#fff;border:none;padding:14px 24px;border-radius:8px;
+      font-size:16px;font-weight:bold;cursor:pointer;margin-top:10px
+    }
+    nav a{
+      display:inline-block;margin:6px;padding:10px 18px;text-decoration:none;
+      background:#89a98f;color:#fff;border-radius:8px;font-weight:bold
+    }
+    footer{background:#5f7f8c;color:#fff;margin-top:40px}
+  </style>
 </head>
-
 <body>
 
-<img src="logo.png" class="logo">
+<header>
+  <img src="logo.png" class="logo" alt="Logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="enrollment.html">Enrollment</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-<div class="section">
+<div class="content">
+  <h1>Join the Founding Families Waitlist</h1>
+  <p>Complete this form and we will contact you when enrollment opens.</p>
 
-<h1>Join Our Waitlist</h1>
-
-<p>
-Fill out the form below and we will notify you when enrollment opens.
-</p>
-
-<form action="mailto:lee-bellas-NPLH@outlook.com" method="post" enctype="text/plain">
-
-<input type="text" name="Name" placeholder="Your Name" required>
-
-<input type="email" name="Email" placeholder="Your Email" required>
-
-<input type="text" name="Child Age" placeholder="Child Age">
-
-<button type="submit">Join Waitlist</button>
-
-</form>
-
-<br>
-
-<button onclick="location.href='index.html'">Back Home</button>
-
+  <form action="mailto:lee-bellas-NPLH@outlook.com" method="post" enctype="text/plain">
+    <input type="text" name="Parent Name" placeholder="Parent/Guardian Name" required><br>
+    <input type="email" name="Email" placeholder="Email Address" required><br>
+    <input type="text" name="Phone" placeholder="Phone Number"><br>
+    <select name="Care Needed">
+      <option value="">Select Care Needed</option>
+      <option>Daytime Care</option>
+      <option>Evening Care</option>
+      <option>Overnight Care</option>
+      <option>Rotating Schedule</option>
+    </select><br>
+    <input type="text" name="Child Age" placeholder="Child Age"><br>
+    <textarea name="Notes" placeholder="Anything you'd like us to know" rows="5"></textarea><br>
+    <button type="submit">Join Waitlist</button>
+  </form>
 </div>
+
+<footer>Lee-Bella's No Place Like Home CDC</footer>
 
 </body>
 </html>
